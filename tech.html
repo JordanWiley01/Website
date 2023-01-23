@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Collection.co.uk</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <i class="fa-duotone fa-axe-battle"></i>  
+</head>
+<body>
+   <nav class="navbar">
+   <div class="navbar__container">
+    
+<a href="index.html" id="navbar__logo"><i class="fas fa-gem"></i>Fitness Collection.com</a>
+<div class="navbar__toggle" id="mobile-menu">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+</div>
+<ul class="navbar__menu">
+   
+<li class="navbar__item">
+    
+    <a href="index.html" class="navbar__links">Back to HOME</a>
+</li>
+
+<li class="navbar__item">
+    <a href="tech.html" class="navbar__links">SUPPORT</a>
+</li>
+
+<li class="navbar__item">
+    <a href="products.html" class="navbar__links">GALLERY</a>
+</li>
+<li class="navbar__btn">
+    <a href="information.html" class="button">Information Page</a>
+</li>
+</ul>
+   </div>
+</nav>
+<!--Hero Section correct! -->
+<div class="main">
+    <div class="main__container">
+        <div class="main__content">
+            <h1>Fitness Collection</h1>
+            <h2>Support Page</h2>
+            <p>What can we do to Help?</p>
+            <button class="main__btn">
+                <a href="products.html">Continue Your Journey</a>
+            </button>
+        </div> 
+    </div>
+    <div class="main__image--container">
+        <img src="images/pic1.svg" alt="pic" id="main__indeximg">
+    </div>
+        <div class="form-inquiries">
+            <form>
+                <h1>Further Inquiries</h1>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type ="text" id="name" placeholder="Your Name" required name="name" class="form-control" aria-label="name">
+                    <small class = "error"></small>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type ="email" id="email" placeholder="Your Email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" name="email" class="form-control" aria-label="email">
+                    <small class = "error"></small>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id ="message" placeholder="Your Message" rows="6" required name="message" class="form-control" aria-label="message"></textarea>
+                    <small class = "error"></small>
+                </div>
+                <div class="center">
+                    <input type= "submit" value="Send Message" class="submit-button">
+                    <p id="success" style="display: none;">Form submitted successfully!</p> 
+                </div>
+            </form>
+        <script src="app.js"></script>
+        <script>
+            document.querySelector("form").addEventListener("submit", function(event) {
+            event.preventDefault();
+            validateFrom();
+        });
+        </script>
+</div>
+<!--Service Section - correct!-->
+<div class="footer__container">
+    <div class="footer__links">
+        <div class="footer__link--wrapper">
+            <div class="footer__link--items">
+                <h2>How can we help?</h2>
+                <a href="information.html">Recieve Exclusive Offers and Updates</a>
+                <a href="information.html">Customer Service</a>
+                <a href="information.html">Careers</a>
+                <a href="information.html">Size Guide</a>
+                <a href="information.html">Terms of Service</a>
+            </div>
+            <div class="footer__link--wrapper">
+                <div class="footer__link--items">
+                    <h2>About Us</h2>
+                    <a href="information.html">Contact Support</a>
+                    <a href="information.html">Locations</a>
+                    <a href="information.html">Sponsorships</a>
+                    <a href="information.html">Social Media</a>
+                    <a href="information.html">Frequently asked questions</a>
+                </div>
+            </div>
+            <div class="footer__link--items">
+                <h2>Information</h2>
+                <a href="information.html">About Fitness Collection</a>
+                <a href="information.html">Returns Policy</a>
+                <a href="information.html">Terms and Conditions</a>
+                <a href="information.html">Delivery Options</a>
+                <a href="information.html">Discount and Promotion Codes</a>
+            </div>
+        </div>
+    </div>
+    <div class="social__media">
+        <div class="social__media--wrap">
+            <div class="footer__logo">
+                <a href="index.html" id="footer__logo"><i class="fas fa-gem"></i>Fitness Collection</a>
+            </div>
+            <p class="website__rights">Fitness Collection 2022. All rights reserved</p>
+            <div class="social__icons">
+                <a href="/" class="social__icons--link" target="_blank">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="/" class="social__icons--link" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="/" class="social__icons--link" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="/" class="social__icons--link" target="_blank">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>

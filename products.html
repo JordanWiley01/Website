@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Collection</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <i class="fa-duotone fa-axe-battle"></i>
+</head>
+
+<body>
+   <nav class="navbar">
+   <div class="navbar__container">
+    
+<a href="index.html" id="navbar__logo"><i class="fas fa-gem"></i>Fitness Collection.com</a>
+<div class="navbar__toggle" id="mobile-menu">
+    <span class="bar">home</span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+</div>
+<ul class="navbar__menu">
+   
+<li class="navbar__item">
+    <a href="index.html" class="navbar__links">back to HOME</a>
+</li>
+
+<li class="navbar__item">
+    <a href="tech.html" class="navbar__links">Supprot Page</a>
+</li>
+
+<li class="navbar__item">
+    <a href="products.html" class="navbar__links">GALLERY</a>
+</li>
+<li class="navbar__btn">
+    <a href="information.html" class="button">Information Page</a>
+</li>
+</ul>
+   </div>
+</nav>
+<!--Main Section-->
+<div class="main">
+    <div class="main__container">
+        <div class="main__content">
+            <h1>Fitness Collection</h1>
+            <h2>Progress Page</h2>
+            <p>Keep track of your progress</p>
+            <button class="main__btn">
+              <a href="#form-section">Continue Your Journey</a>
+            </button>
+        </div>
+
+</div>
+<div class="main__image--container">
+  <img src="images/pic3.jpg" alt="pic" id="main__indeximg">
+</div>
+  <!-- Calender Code -->
+    <div class="container">
+        <div class="calendar">
+          <div class="front">
+            <div class="current-date">
+              <h1>Friday 15th</h1>
+              <h1>January 2016</h1>	
+            </div>
+  
+            <div class="current-month">
+              <ul class="week-days">
+                <li>MON</li>
+                <li>TUE</li>
+                <li>WED</li>
+                <li>THU</li>
+                <li>FRI</li>
+                <li>SAT</li>
+                <li>SUN</li>
+              </ul>
+  
+              <div class="weeks">
+                <div class="first">
+                  <span class="last-month">28</span>
+                  <span class="last-month">29</span>
+                  <span class="last-month">30</span>
+                  <span class="last-month">31</span>
+                  <span>01</span>
+                  <span>02</span>
+                  <span>03</span>
+                </div>
+
+                <div class="second">
+                  <span>04</span>
+                  <span>05</span>
+                  <span class="event">06</span>
+                  <span>07</span>
+                  <span>08</span>
+                  <span>09</span>
+                  <span>10</span>
+                </div>
+  
+                <div class="third">
+                  <span>11</span>
+                  <span>12</span>
+                  <span>13</span>
+                  <span>14</span>
+                  <span class="active">15</span>
+                  <span>16</span>
+                  <span>17</span>
+                </div>
+  
+                <div class="fourth">
+                  <span>18</span>
+                  <span>19</span>
+                  <span>20</span>
+                  <span>21</span>
+                  <span>22</span>
+                  <span>23</span>
+                  <span>24</span>
+                </div>
+  
+                <div class="fifth">
+                  <span>25</span>
+                  <span>26</span>
+                  <span>27</span>
+                  <span>28</span>
+                  <span>29</span>
+                  <span>30</span>
+                  <span>31</span>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="back">
+            <input placeholder="What's the event?">
+            <div class="info">
+              <div class="date">
+                <p class="info-date">
+                Date: <span>Jan 15th, 2017</span>
+                </p>
+                <p class="info-time">
+                  Time: <span>6:35 PM</span>
+                </p>
+              </div>
+              <div class="address">
+                <p>
+                  Address: <span>129 W 81st St, New York, NY</span>
+                </p>
+              </div>
+              <div class="observations">
+                <p>
+                  Observations: <span>Be there 15 minutes earlier</span>
+                </p>
+              </div>
+            </div>
+  <!--   div class="actions">
+              <button class="save">
+                Save <i class="ion-checkmark"></i>
+              </button>
+              <button class="dismiss">
+                Dismiss <i class="ion-android-close"></i>
+              </button>
+            </div> -->
+            
+          </div>
+  
+        </div>
+      </div>
+<div id="calendar">
+    <div id="calendar-header">
+      <button id="prev-month" onclick="prevMonth()"></button>
+      <h2 id="month-year"></h2>
+      <button id="next-month" onclick="nextMonth()"></button>
+    </div>
+    <table id="calendar-body">
+      <thead>
+    
+      </thead>
+      <tbody id="calendar-days"></tbody>
+    </table>
+  </div>
+
+          </div>
+    </div>
+</div> 
+    </div>
+    <div class="fitness-tracker-container">
+      <h1>Fitness Progress Tracker</h1>
+    <form id="form-section">
+      <label>Current Weight: <input type="number" id="weight">
+      <select id="weight-unit">
+        <option value="kg">kg</option>
+        <option value="lbs">lbs</option>
+      </select>
+      </label>
+      <br>
+      <label>Body Measurements: <input type="text" id="measurements">
+      <select id="measurement-unit">
+        <option value="cm">cm</option>
+        <option value="in">in</option>
+      </select>
+      </label>
+      <br>
+      <label>Workout Routine: <input type="text" id="routine"></label>
+      <br>
+      <button type="button" onclick="calculateProgress()">Track Progress</button>
+      <div id="progress"></div>
+    </form>
+    <div class="calendar-container">
+    <h2>Calendar</h2>
+    <div id="calendar"></div>
+  </div>
+  </form>
+    <div id="progress"></div>
+    <script src="script.js"></script>
+<!--Service Section - correct!-->
+<div class="footer__container">
+    <div class="footer__links">
+        <div class="footer__link--wrapper">
+            <div class="footer__link--items">
+                <h2>How can we help?</h2>
+                <a href="support.html#exclusive-offers">Recieve Exclusive Offers and Updates</a>
+                <a href="support.html#customer-service">Customer Service</a>
+                <a href="support.html#careers">Careers</a>
+                <a href="support.html#size-guide">Size Guide</a>
+                <a href="support.html#terms-of-service">Terms of Service</a>
+            </div>
+
+            <div class="footer__link--wrapper">
+                <div class="footer__link--items">
+                    <h2>About Us</h2>
+                    <a href="information.html">Recieve Exclusive Offers and Updates</a>
+                    <a href="information.html">Customer Service</a>
+                    <a href="information.html">Careers</a>
+                    <a href="information.html">Size Guide</a>
+                    <a href="information.html">Terms of Service</a>
+                </div>
+                <div class="footer__link--wrapper">
+                    <div class="footer__link--items">
+                        <h2>About Us</h2>
+                        <a href="information.html">Contact Support</a>
+                        <a href="information.html">Locations</a>
+                        <a href="information.html">Sponsorships</a>
+                        <a href="information.html">Social Media</a>
+                        <a href="information.html">Frequently asked questions</a>
+                    </div>
+                </div>
+                <div class="footer__link--items">
+                    <h2>Information</h2>
+                    <a href="information.html">About Fitness Collection</a>
+                    <a href="information.html">Returns Policy</a>
+                    <a href="information.html">Terms and Conditions</a>
+                    <a href="information.html">Delivery Options</a>
+                    <a href="information.html">Discount and Promotion Codes</a>
+            </div>
+        </div>
+    </div>
+    <div class="social__media">
+        <div class="social__media--wrap">
+            <div class="footer__logo">
+              <a href="index.html" id="footer__logo"><i class="fas fa-gem"></i>Fitness Collection</a>
+            </div>
+            <p class="website__rights">Fitness Collection 2023. All rights reserved</p>
+            <div class="social__icons">
+                <a href="/" class="social__icons--link" target="_blank">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="/" class="social__icons--link" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="/" class="social__icons--link" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="/" class="social__icons--link" target="_blank">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>

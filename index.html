@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Collection.co.uk</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <i class="fa-duotone fa-axe-battle"></i>
+</head>
+<body>
+   <nav class="navbar">
+   <div class="navbar__container">
+    
+<a href="index.html" id="navbar__logo"><i class="fas fa-gem"></i>Fitness Collection.com</a>
+<div class="navbar__toggle" id="mobile-menu">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <script>
+        const menu = document.querySelector('#mobile-menu')
+        const menuLinks = document.querySelector('.navbar__menu')
+        menu.addEventListener('click', function () {
+          menu.classList.toggle('is-active');
+        });
+      </script>
+</div>
+<ul class="navbar__menu">
+   
+<li class="navbar__item">
+    <a href="index.html" class="navbar__links">HOME</a>
+</li>
+
+<li class="navbar__item">
+    <a href="tech.html" class="navbar__links">SUPPORT</a>
+</li>
+<li class="navbar__item">
+    <a href="products.html" class="navbar__links">GALLERY</a>
+</li>
+<li class="navbar__btn">
+    <a href="information.html" class="button">Information Page</a>
+</li>
+</ul>
+   </div>
+</nav>
+<!--Main Section-->
+<script>
+  function scrollToSurvey() {
+    // Get the survey section element
+    const surveySection = document.querySelector("#survey-section");
+    // Scroll to the survey section
+    window.scrollTo({
+      top: surveySection.offsetTop,
+      left: 0,
+      behavior: "smooth"
+    });
+  }
+</script>
+<div class="main">
+    <div class="main__container">
+        <div class="main__content">
+            <h1>Fitness Collection</h1>
+            <h2>Fuel Your Ambition </h2>
+            <p>Global online fashion retailer offering countless unisex styles to browse from. So you can stay ahead of the trends.</p>
+            <button class="main__btn">
+                <a href="#survey" onclick="scrollToSurvey()">Begin Your Journey Here</a>
+            </button>   
+        </div>
+        </div>
+        <div class="main__image--container">
+            <img src="images/pic4.jpg" alt="pic" id="main__indeximg">
+        </div>
+    </div>
+<div id="survey">
+    <!-- survey content here -->
+</div>
+<script>
+    function scrollToSurvey() {
+        const survey = document.querySelector('#survey');
+        survey.scrollIntoView({ behavior: 'smooth' });
+    }
+</script>
+<form id="fitness-survey-form">
+    <h2>Fitness Survey</h2>
+    <div class="progress-bar">
+      <div class="progress-bar-filling" id="progress"></div>
+    </div>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    <br>
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age" min="18" max="100" required>
+    <br>
+    <label for="gender">Gender:</label>
+    <input type="radio" id="male" name="gender" value="male" required>
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="gender" value="female" required>
+    <label for="female">Female</label>
+    <input type="radio" id="other" name="gender" value="other" required>
+    <label for="other">Other</label>
+    <br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    <br>
+    <label for="fitness-goals">What are your fitness goals?</label>
+    <div class="checkbox-container">
+      <input type="checkbox" id="weight-loss" name="fitness-goals" value="weight-loss">
+      <label for="weight-loss">Weight loss</label>
+      <input type="checkbox" id="muscle-gain" name="fitness-goals" value="muscle-gain">
+      <label for="muscle-gain">Muscle gain</label>
+      <input type="checkbox" id="general-fitness" name="fitness-goals" value="general-fitness">
+      <label for="general-fitness">General fitness</label>
+      <input type="checkbox" id="performance-enhancement" name="fitness-goals" value="performance-enhancement">
+      <label for="performance-enhancement">Performance enhancement</label>
+    </div>
+    <br>
+  <label for="fitness-level">What is your current fitness level?</label>
+  <select id="fitness-level" name="fitness-level" required>
+    <option value="">Select one</option>
+    <option value="beginner">Beginner</option>
+    <option value="intermediate">Intermediate</option>
+    <option value="advanced">Advanced</option>
+  </select>
+  <br>
+  <label for="workout-frequency">How often do you currently workout?</label>
+  <select id="workout-frequency" name="workout-frequency" required>
+    <option value="">Select one</option>
+    <option value="rarely">Rarely</option>
+    <option value="once-week">Once a week</option>
+    <option value="2-3-times-week">2-3 times a week</option>
+    <option value="daily">Daily</option>
+  </select>
+  <br>
+  <label for="preferred-workout-type">What is your preferred workout type?</label>
+  <div class="checkbox-container">
+    <input type="checkbox" id="cardio" name="preferred-workout-type" value="cardio">
+    <label for="cardio">Cardio</label>
+    <input type="checkbox" id="strength-training" name="preferred-workout-type" value="strength-training">
+    <label for="strength-training">Strength training</label>
+    <input type="checkbox" id="yoga" name="preferred-workout-type" value="yoga">
+    <label for="yoga">Yoga</label>
+    <input type="checkbox" id="other" name="preferred-workout-type" value="other">
+    <label for="other">Other</label>
+  </div>
+  <br>
+  <label for="current-nutrition-habits">What are your current nutrition habits?</label>
+  <textarea id="current-nutrition-habits" name="current-nutrition-habits"></textarea>
+  <br>
+  <label for="feedback">Additional feedback:</label>
+  <textarea id="feedback" name="feedback"></textarea>
+  <br>
+<!--Service Section - correct!-->
+<div class="footer__container">
+    <div class="footer__links">
+        <div class="footer__link--wrapper">
+            <div class="footer__link--items">
+                <h2>How can we help?</h2>
+                <a href="information.html">Recieve Exclusive Offers and Updates</a>
+                <a href="information.html">Customer Service</a>
+                <a href="information.html">Careers</a>
+                <a href="information.html">Size Guide</a>
+                <a href="information.html">Terms of Service</a>
+            </div>
+            <div class="footer__link--wrapper">
+                <div class="footer__link--items">
+                    <h2>About Us</h2>
+                    <a href="information.html">Contact Support</a>
+                    <a href="information.html">Locations</a>
+                    <a href="information.html">Sponsorships</a>
+                    <a href="information.html">Social Media</a>
+                    <a href="information.html">Frequently asked questions</a>
+                </div>
+            </div>
+            <div class="footer__link--items">
+                <h2>Information</h2>
+                <a href="information.html">About Fitness Collection</a>
+                <a href="information.html">Returns Policy</a>
+                <a href="information.html">Terms and Conditions</a>
+                <a href="information.html">Delivery Options</a>
+                <a href="information.html">Discount and Promotion Codes</a>
+            </div>
+        </div>
+    </div>
+    <div class="social__media">
+        <div class="social__media--wrap">
+            <div class="footer__logo">
+                <a href="index.html" id="footer__logo"><i class="fas fa-gem"></i>Fitness Collection - Inspired by the Worlds Greatest Athletes</a>
+            </div>
+            <p class="website__rights">Fitness Collection 2020. ALL RIGHTS RESERVED</p>
+            <div class="social__icons">
+                <a href="/" class="social__icons--link" target="_blank">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="/" class="social__icons--link" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="/" class="social__icons--link" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="/" class="social__icons--link" target="_blank">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
